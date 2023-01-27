@@ -1,0 +1,63 @@
+package com.music;
+import java.util.*;
+
+public class MediaPlayer {
+	public static void main(String[] args) 
+	{
+		Multi();
+		}
+		static void Multi() {
+			int choice, loop;
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Please Enter Value for below Menu to Select: ");
+			System.out.println("1. Play Song"); 
+			System.out.println("2. Add/Remove Songs");
+			System.out.println("3. Update Songs");
+			System.out.println("4. Exit");
+			choice=sc.nextInt();
+			
+	switch (choice) {
+	case 1: System.out.println("1. Select Song" );
+	int a=sc.nextInt();
+	if(a<=1)
+	{
+	System.out.println("1. Kesariya" ); 
+	System.out.println("2. Tum Mile");
+	System.out.println("3. Tum hi Ho" );
+	System.out.println("4. Tere Naam" );
+	}
+	int b=sc.nextInt();   
+	if(b>=1)
+	{
+	    System.out.println("1. Kesariya: Duration- '5.04 Mins': Album -'Arijit Singh'");
+	}
+	if(b>=2)
+	{
+        System.out.println("2. Tum Mile: Duration- '4.08 min': Album- 'Atif Aslam'");
+	}
+	if(b>=3)
+	{
+	    System.out.println("3. Tum hi Ho Duration:- '3.08 min' Album -'Shreya Ghoshal'" );
+	}
+	if(b==4)
+	{
+		System.out.println("4. Tere Naam:- Duration:- '4.04min' Album-'Darshan Rawal'");
+	}
+	else break; 
+	case 2: System.out.println("2. Choose Songs To remove" ); 
+	int c=sc.nextInt();
+	break;
+
+	case 3: System.out.println("3. Choose Songs to update" ); 
+	choice=sc.nextInt();
+	break;
+
+	case 4: System.out.println("4. Choose Songs" ); 
+	choice=sc.nextInt(); 
+	break;
+
+	default: System.out.println("Please select desired option only" );
+	}
+		}
+	}
+	
