@@ -1,0 +1,10 @@
+@RestController
+@RequestMapping("/api")
+public class MusicController {
+    
+    @GetMapping("/songs")
+    public List<String> getAvailableSongs() {
+        // Implement logic to retrieve a list of available songs
+        return Arrays.asList("song1.mp3", "song2.mp3", "song3.mp3");
+    }
+}
